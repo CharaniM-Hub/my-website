@@ -1,0 +1,79 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.title {
+  text-align: center;
+  font-family: "Oswald", system-ui;
+  font-size: 56px;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+.container h3 {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: var(--h3-color);
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--sidebar-color);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px var(--text-color);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  border: 3px solid var(--toggle-color);
+  object-fit: cover;
+  border-radius: 150px;
+  box-shadow: 0 2px 30px var(--toggle-color);
+}
+.card:hover img{
+  border-color: var(--text-color);
+  box-shadow: 0 2px 30px var(--text-color);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: var(--h3-color);
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.project {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 100px;
+  border-color: var(--h3-color);
+  cursor: pointer;
+}
+.body-dark .project {
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project:hover {
+  color: var(--hover-color);
+  border-color: beige;
+}

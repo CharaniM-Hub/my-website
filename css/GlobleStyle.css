@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&family=Oswald:wght@200..700&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Sofadi+One&display=swap');
+
+
+*{  
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color:#d7daef;
+    --sidebar-color:rgb(233, 238, 246);
+    --primary-color:white;
+    --primary-color-ligth:#d7eaef;
+    --primarytext-color:rgb(15, 10, 35);
+    --toggle-color:#f0ddf2;
+    --text-color:black;
+    --swicth-color:rgb(197, 197, 197);
+    --btn-color:white;
+    --shadow-color:rgba(0, 0, 0, 0.2);
+    --h3-color:rgb(9, 9, 154);
+    --hover-color:rgb(255, 0, 0);
+    --primaryhover-color:rgb(159, 206, 227);
+  }
+
+body {
+    background: var(--body-color);
+    color: var(--body-color);
+}
+
+body.dark{
+    --body-color:#000000;
+    --sidebar-color:rgb(20, 31, 37);
+    --primary-color:rgba(0, 0, 0, 0.386);
+    --primarytext-color:yellow;
+    --toggle-color:#29253d;
+    --text-color:white;
+    --swicth-color:rgb(2, 2, 2);
+    --btn-color:rgb(0, 0, 0);
+    --shadow-color:rgba(255, 255, 255, 0.915);
+    --h3-color:aqua;
+    --hover-color:rgb(238, 255, 0);
+    --primaryhover-color:rgb(19, 42, 104);
+}
+
+
+.home {
+    position: absolute;
+    height: 100vh;
+    left: 260px;
+    margin-top: 30px;
+    background-color: var(--body-color); /* Apply body color to home section */
+    width: calc(100% - 280px);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px (tablets) */
+    .home {
+      width: calc(100% - 120px);
+    }
+    .sidebar {
+      width: 120px;
+    }
+    .home-content {
+      padding-top: 20px;
+    }
+    .home-content h1 {
+      font-size: 40px;
+    }
+    .home-content h3 {
+      font-size: 30px;
+    }
+    .home-content p {
+      font-size: 18px;
+    }
+    .home-content .btn-box {
+      width: 150px;
+    }
+    .btn-box a {
+      width: 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Styles for screens with a maximum width of 480px (mobile phones) */
+    .home {
+      width: calc(100% - 80px);
+    }
+    .sidebar {
+      width: 80px;
+    }
+    .home-content {
+      padding-top: 15px;
+    }
+    .home-content h1 {
+      font-size: 30px;
+    }
+    .home-content h3 {
+      font-size: 20px;
+    }
+    .home-content p {
+      font-size: 15px;
+    }
+    .home-content .btn-box {
+      width: 100px;
+    }
+    .btn-box a {
+      width: 40px;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    /* Styles for screens with a minimum width of 800px */
+    .home {
+      width: calc(100% - 280px);
+    }
+    .sidebar {
+      width: 280px;
+    }
+    .home-content {
+      padding-top: 30px;
+    }
+    .home-content h1 {
+      font-size: 56px;
+    }
+    .home-content h3 {
+      font-size: 40px;
+    }
+    .home-content p {
+      font-size: 20px;
+    }
+    .home-content .btn-box {
+      width: 200px;
+    }
+    .btn-box a {
+      width: 80px;
+    }
+  }
+  
+  

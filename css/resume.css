@@ -1,0 +1,23 @@
+/*------Right Header-----*/
+/*.home.btn ul {
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 2;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+.home.btn a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+*/

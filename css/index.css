@@ -1,123 +1,188 @@
 /*-------Welcome Msg--------*/
 
 .welcome-message {
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 20px;
-    background-color: var(--toggle-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--shadow-color);
-  }
-  
-  .welcome-message h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--primarytext-color);
-    text-align: center;
-  }
-  
-  /*-------About Me--------*/
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: var(--toggle-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.welcome-message h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primarytext-color);
+  text-align: center;
+}
+
+/*-------About Me--------*/
 .home-content{
-    padding-top: 30px;
-    max-width: 600px;
-  }
+  padding-top: 30px;
+  max-width: 600px;
+}
 
 .home-content h1{
-  font-family: "Oswald", system-ui;
-  font-size: 56px;
-  font-weight: 700;
-  color: var(--text-color);
+font-family: "Oswald", system-ui;
+font-size: 56px;
+font-weight: 700;
+color: var(--text-color);
 }
 .home-content h3{
-  font-size: 40px;
-  font-weight: 300;
-  color: var(--h3-color);
+font-size: 40px;
+font-weight: 300;
+color: var(--h3-color);
 }
 .home-content p{
-  font-size: 20px;
-  font-weight: 300;
-  max-width: 600px;
-  color: var(--text-color);
+font-size: 20px;
+font-weight: 300;
+max-width: 600px;
+color: var(--text-color);
 }
 .home-content .btn-box{
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-  height: 30px;
+display: flex;
+justify-content: space-between;
+width: 200px;
+height: 30px;
 }
 .btn-box a{
-  color: var(--text-color);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  height: 40px;
-  background-color: var(--btn-color);
-  border: 2px solid var(--h3-color) ;
-  border-radius: 20px;
-  text-decoration: none;
-  letter-spacing: 1px;
+color: var(--text-color);
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 90px;
+height: 40px;
+background-color: var(--btn-color);
+border: 2px solid var(--h3-color) ;
+border-radius: 20px;
+text-decoration: none;
+letter-spacing: 1px;
 }
 
 .btn-box a:hover{
-  color: #fa1408;
-  border-color: beige;
-  transition: all 0.5s ease;
+color: #fa1408;
+border-color: beige;
+transition: all 0.5s ease;
 }
 body.dark .btn-box a:hover{
+color: #ffff03;
+transition: all 0.5s ease;
+}
+
+.home-sci{
+position: absolute;
+bottom: 80px;
+width: 170px;
+display: flex;
+justify-content: space-between;
+}
+
+.home-sci a{
+position: relative;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid var(--h3-color);
+border-radius: 50%;
+font-size: 20px;
+color: var(--text-color);
+text-decoration: none;
+}
+
+.home-sci a:hover{
+  color: #fa1408;
+  transition: all 0.5s ease;
+}
+body.dark .home-sci a:hover{
   color: #ffff03;
   transition: all 0.5s ease;
 }
 
-.home-sci{
-  position: absolute;
-  bottom: 80px;
-  width: 170px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-sci a{
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid var(--h3-color);
-  border-radius: 50%;
-  font-size: 20px;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.home-sci a:hover{
-    color: #fa1408;
-    transition: all 0.5s ease;
-}
-body.dark .home-sci a:hover{
-    color: #ffff03;
-    transition: all 0.5s ease;
-}
-
 .home-content .home-img {
-  display: none; 
-  background-size: 40%; 
+display: none; 
+background-size: 40%; 
 }
 
 .home {
-  background-image: url('../images/profilepic1.png'); 
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position-x: 80%; 
-  background-position-y: 45%; 
+background-image: url('../images/profilepic1.png'); 
+background-repeat: no-repeat;
+background-size: 30%;
+background-position-x: 80%; 
+background-position-y: 45%; 
 }
 
 body.dark .home{
-  background-image: url('../images/profilepic4.png'); 
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position-x: 85%; 
-  background-position-y: 45%; 
+background-image: url('../images/profilepic4.png'); 
+background-repeat: no-repeat;
+background-size: 30%;
+background-position-x: 85%; 
+background-position-y: 45%; 
+}
+
+.nav {
+display: inline-flex; 
+justify-content: space-between;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.nav a {
+margin-inline-start: 250px;
+margin-right: 100px; 
+text-decoration: none; 
+color: var(--text-color);
+background-color: var(--btn-color);
+padding: 10px 30px;
+border-radius: 25px;
+border: 2px solid var(--h3-color);
+}
+
+.nav a:hover {
+color: var(--hover-color);
+border-color: beige;
+}
+
+/* Small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .welcome-message {
+    max-width: 300px;
+    padding: 15px;
+  }
+  .home-content {
+    padding-top: 0px;
+    max-width: 400px;
+    margin-left: 10px;
+  }
+  .home-content h1 {
+    font-size: 40px;
+  }
+  .home-content h3 {
+    font-size: 30px;
+  }
+  .home-content p {
+    font-size: 18px;
+  }
+  .nav{
+    margin-left: 10px;
+    justify-content: space-between;
+  }
+  .btn-box {
+    width: 150px;
+    height: 25px;
+  }
+  .btn-box a {
+    width: 70px;
+    height: 30px;
+  }
+  .home-sci {
+    width: 120px;
+  }
+  .home-sci a {
+    width: 30px;
+    height: 30px;
+  }
 }

@@ -1,3 +1,12 @@
+.home {
+  position: absolute;
+  height: 100vh;
+  left: 260px;
+  margin-top: 30px;
+  background-color: var(--body-color); 
+  width: calc(100% - 300px);
+}
+
 /*-------Welcome Msg--------*/
 
 .welcome-message {
@@ -14,6 +23,17 @@
   font-weight: bold;
   color: var(--primarytext-color);
   text-align: center;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .welcome-message {
+    max-width: 300px;
+    padding: 15px;
+  }
+  .welcome-message h2 {
+    font-size: 20px;
+  }
 }
 
 /*-------About Me--------*/
@@ -122,8 +142,33 @@ background-position-x: 85%;
 background-position-y: 45%; 
 }
 
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .home-content {
+    padding-top: 20px;
+    max-width: 400px;
+  }
+  .home-content h1 {
+    font-size: 40px;
+  }
+  .home-content h3 {
+    font-size: 30px;
+  }
+  .home-content p {
+    font-size: 18px;
+  }
+  .btn-box {
+    width: 150px;
+    height: 25px;
+  }
+  .btn-box a {
+    width: 70px;
+    height: 35px;
+  }
+}
+
 .nav {
-display: inline-flex; 
+display: flex; 
 justify-content: space-between;
 padding: 10px 20px;
 border-radius: 5px;
@@ -146,43 +191,14 @@ color: var(--hover-color);
 border-color: beige;
 }
 
-/* Small screens (max-width: 768px) */
-@media screen and (max-width: 768px) {
-  .welcome-message {
-    max-width: 300px;
-    padding: 15px;
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .nav {
+    padding: 5px 10px;
   }
-  .home-content {
-    padding-top: 0px;
-    max-width: 400px;
-    margin-left: 10px;
-  }
-  .home-content h1 {
-    font-size: 40px;
-  }
-  .home-content h3 {
-    font-size: 30px;
-  }
-  .home-content p {
-    font-size: 18px;
-  }
-  .nav{
-    margin-left: 10px;
-    justify-content: space-between;
-  }
-  .btn-box {
-    width: 150px;
-    height: 25px;
-  }
-  .btn-box a {
-    width: 70px;
-    height: 30px;
-  }
-  .home-sci {
-    width: 120px;
-  }
-  .home-sci a {
-    width: 30px;
-    height: 30px;
+  .nav a {
+    margin-inline-start: 150px;
+    margin-right: 50px;
+    padding: 5px 15px;
   }
 }

@@ -256,3 +256,56 @@ body.dark .toggle-switch .switch{
     box-shadow: 0 0 10px var(--shadow-color);
 }
 
+/*------Footer Section--------------*/
+.footer {
+    position: static;
+    width: 100%;
+    left: 260px;
+    background-color: var(--body-color);
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--sidebar-color);
+}
+.footer-content {
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 20px;
+}
+
+.footer-links a {
+    color: var();
+    text-decoration: none;
+}

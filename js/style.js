@@ -67,3 +67,33 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+//-------------Contact Form----
+const form = document.querySelector('form');
+const fullName = document.getElementById("name");
+const email = document.getElementById("email"); 
+const phoneNo = document.getElementById("phone"); 
+const message = document.getElementById("message");
+const subject = document.getElementById("subject"); 
+
+function sendEmail(){
+  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${phoneNo.value}<br> ${message.value}`;
+
+  Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "abcperera03@gmail.com",
+      Password : "7BDEBDAEC568CFE2076F7BA196D3B72B60E9",
+      To : 'abcperera03@gmail.com',
+      From : "abcperera03@gmail.com",
+      Subject : subject.value,
+      Body : bodyMessage
+}).then(
+  () => alert("Email sent successfully!")
+);
+}
+
+form.addEventListener("submit",(e) =>{
+  e.preventDefault();
+
+  sendEmail();
+});

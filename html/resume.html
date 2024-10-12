@@ -307,25 +307,30 @@
             <span class="circle one"></span>
             <span class="circle two"></span>
   
-            <form action="https://formspree.io/f/mkgnwbkk" method="POST">
-              <h3 class="title">Contact Me</h3>
+          <form action="#">
+            <h3 class="title">Contact Me</h3>
               <div class="input-container">
-                <input type="text" name="name" class="input" />
+                <input type="text" name="name" id="name" class="input" required>
                 <label for="">Username</label>
                 <span>Username</span>
               </div>
               <div class="input-container">
-                <input type="email" name="email" class="input" />
+                <input type="email" name="email" id="email" class="input" required>
                 <label for="">Email</label>
                 <span>Email</span>
               </div>
               <div class="input-container">
-                <input type="tel" name="phone" class="input" />
+                <input type="tel" name="phone" id="phone" class="input" required>
                 <label for="">Phone</label>
                 <span>Phone</span>
               </div>
+              <div class="input-container">
+                <input type="subject" id="subject" class="input" required>
+                <label for="">Subject</label>
+                <span>Subject</span>
+            </div>
               <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
+                <textarea name="message" id="message" class="input" required></textarea>
                 <label for="">Message</label>
                 <span>Message</span>
               </div>
@@ -356,6 +361,8 @@
     </div>
 </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/script.js"></script>
     <script src="../js/style.js"></script>
 
